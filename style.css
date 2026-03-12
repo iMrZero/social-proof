@@ -147,16 +147,16 @@ body {
   background: var(--clr-very-dark-magenta);
   max-width: 400px;
   width: 280px;
-  padding: 2rem;
+  padding: 1.5rem 1rem;
   border-radius: 10px;
   & p {
     font-weight: var(--fw-regular);
     color: var(--clr-light-grayish-magenta);
+    font-size: 14px;
     text-align: start;
-    line-height: 1.5;
+    line-height: 1.2;
   }
   @media (min-width: 47em) {
-    min-height: 280px;
     border-radius: 5px;
     transform: translateY(calc(16px * sibling-index()));
   }
