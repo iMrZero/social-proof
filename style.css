@@ -135,19 +135,18 @@ body {
 .testimonial__cards {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   color: var(--clr-white);
   align-items: center;
   gap: var(--fs-body);
   @media (min-width: 47em) {
     flex-direction: row;
-    align-items: start;
   }
 }
 .testimonial__cards .card {
   background: var(--clr-very-dark-magenta);
   max-width: 400px;
-  width: 225px;
-  aspect-ratio: 1 / 0.7;
+  width: 280px;
   padding: 2rem;
   border-radius: 10px;
   & p {
@@ -157,10 +156,9 @@ body {
     line-height: 1.5;
   }
   @media (min-width: 47em) {
-    width: 280px;
-    aspect-ratio: 1 / 0.6;
+    min-height: 280px;
     border-radius: 5px;
-    margin-top: calc(16px * sibling-index());
+    transform: translateY(calc(16px * sibling-index()));
   }
 }
 .testimonial .card .card__head {
